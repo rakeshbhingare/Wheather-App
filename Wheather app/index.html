@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather App</title>
+    <link rel="stylesheet" href="wheather.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Weather App</h1>
+        <!-- <form action=""> -->
+        <input type="text" id="city" placeholder="Enter City" />
+        <button onClick="getData()" id="submit">Get Weather</button>
+        <!-- </form> -->
+        <br />
+        <button onClick="getWeather()" id="location">Weather With Location</button>
+        <!-- <div id="weather-data">
+          <div class="icon">
+            <img src="http://openweathermap.org/img/wn/01d.png" alt="" />
+          </div>
+        </div> -->
+        <div id="both">
+          <div id="container"></div>
+  
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                width="600"
+                height="500"
+                id="gmap_canvas"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+
+<script src="wheather.js"></script>
